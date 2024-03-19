@@ -34,4 +34,13 @@ public class Program
         }
         return sum / numbers.Length;
     }
+    public static int CalculateMax(int[] numbers)
+    {
+        if (numbers == null || numbers.Length == 0)
+        {
+            throw new ArgumentException("Array cannot be null or empty", nameof(numbers));
+        }
+        return numbers.Max();
+    }
+
 }

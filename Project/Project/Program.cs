@@ -28,9 +28,9 @@ public class Program
         }
 
         double sum = 0;
-        foreach (int number in numbers)
+        foreach (int item in numbers)
         {
-            sum += number;
+            sum += item;
         }
         return sum / numbers.Length;
     }
